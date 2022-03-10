@@ -1,0 +1,18 @@
+<h1 mat-dialog-title>Registrarse</h1>
+<div mat-dialog-content>
+    <mat-form-field>
+        <mat-label class="mat-label">Correo Electronico</mat-label>
+        <input matInput placeholder="Correo Electronico">
+        <mat-icon matSuffix>email</mat-icon>
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label class="mat-label">Usuario</mat-label>
+        <input matInput placeholder="Usuario">
+        <mat-icon matSuffix>person</mat-icon>
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label class="mat-label">Contraseña</mat-label>
+        <input matInput type="password" [type]="hide ? 'password':'text'" placeholder="Contraseña">
+        <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility':'visibility_off'}}</mat-icon>
+    </mat-form-field>
+</div>
